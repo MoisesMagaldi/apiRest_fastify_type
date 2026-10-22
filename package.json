@@ -1,0 +1,35 @@
+{
+  "name": "apirest_fastify_type",
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " npx tsx watch ./src/server.ts",
+    "knex": "tsx ./node_modules/.bin/knex",
+    "lint": "eslint src --ext .ts",
+    "build": "tsup src"
+
+  },
+  "author": "moises",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.4.0",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "zod": "^4.3.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^24.10.0",
+    "@types/supertest": "^7.2.1",
+    "eslint": "^8.57.1",
+    "supertest": "^7.3.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.5"
+  }
+}
